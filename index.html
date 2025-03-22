@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- header design -->
+
+    <header class="header">
+      <a href="#home">
+        <img
+          src="./images/f2.png"
+          alt=""
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          style="border-radius: 50%"
+        />
+      </a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">services</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Punitha k</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+
+        <p>
+          I am a B.Tech Computer Science student with a passion for Frontend Development and Cloud Computing. I am still gaining experience, but I am dedicated to learning and excited to apply my skills in new projects. My goal is to help create impactful technology solutions and grow as a professional in the tech industry.
+        <div class="social-media">
+          <a href=""
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href=""
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          
+
+          
+        </div>
+        <a href="" class="btn">Download Resume</a>
+      </div>
+      
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      
+
+      <div class="about-content">
+        <h2 class="heading">About<span>Me</span></h2>
+        <h3><span>Full Stack Developer!</span> & Backend Developer</h3>
+
+        <p>
+          Hi! I'm Punitha k, a passionate <b>B.Tech.</b> student at
+          <b>Alliance University, Bangalore,</b> specializing in
+          <b> Computer Science </b>. I have interest in Front end developer, particularly in <b>Python</b> .
+        </p>
+
+        <a href="javascript:void(0)" class="btn" id="read-more-btn"
+          >Read More</a
+        >
+
+        <!-- Hidden Experience Section -->
+        <div id="experience" class="hidden-experience">
+          <h3>My Skills</h3>
+          <ul>
+            <li><b>Coding Language: </b>Python , JavaScript</li>
+            <li>
+              <b>Frameworks: </b> 
+              ReactJS(Basic)
+            </li>
+            <li><b>Database: </b> MySQL </li>
+            <li><b>Operating System: </b>Linux and Windows</li>
+            <li><b>Tools:</b> github</li>
+            <li><b>Others: </b>System Design, Cloud Computing</li>
+          </ul>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+      <h2 class="heading">Our <span>Services</span></h2>
+
+      <div class="services-container">
+        <!-- Web Development Service Box -->
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>
+            We build dynamic, responsive web applications using Java Spring
+            Boot, React.js, and Tailwind CSS. Our solutions are secure,
+            scalable, and tailored to meet your unique needs.
+          </p>
+          <button class="btn open-modal" data-modal="web-development-modal">
+            Read More
+          </button>
+        </div>
+
+        <!-- Web Development Modal -->
+        <div id="web-development-modal" class="modal">
+          <div class="modal-content">
+            <h3>Full Stack Development</h3>
+            <p><strong>Frontend Development:</strong> React.js, HTML, CSS</p>
+            <p>
+              <strong>Backend Development:</strong> Java, Spring Boot, REST APIs
+            </p>
+            <p><strong>Responsive Design and UI/UX Optimization</strong></p>
+            <p><strong>Custom Web Applications</strong></p>
+            <button class="close-modal">Close</button>
+          </div>
+        </div>
+
+        <!-- Consultation and Support Service Box -->
+        <div class="services-box">
+          <i class="bx bxs-paint"></i>
+          <h3>Consultation and Support</h3>
+          <p>
+            We provide expert consultation to optimize digital presence,
+            offering guidance on tech stacks, architecture, and project
+            planning, along with ongoing support for seamless project execution.
+          </p>
+          <button
+            class="btn open-modal"
+            data-modal="consultation-support-modal"
+          >
+            Read More
+          </button>
+        </div>
+
+        <!-- Consultation and Support Modal -->
+        <div id="consultation-support-modal" class="modal">
+          <div class="modal-content">
+            <h3>Technology Consultation</h3>
+            <p><strong>Code Review and Best Practices</strong></p>
+            <p><strong>System Architecture Design</strong></p>
+            <p><strong>Ongoing Project Maintenance and Support</strong></p>
+            <button class="close-modal">Close</button>
+          </div>
+        </div>
+
+        <!-- consultation area end  -->
+
+        <!-- Cloud Computing start  -->
+        <div class="services-box">
+          <i class="bx bxl-google-cloud"></i>
+          <h3>Cloud Computing</h3>
+          <p>
+            We design and implement cloud-based solutions that are scalable and
+            reliable. Using Docker and cloud platforms like AWS, we ensure your
+            applications are optimized for high traffic and growth.
+          </p>
+          <button class="btn open-modal" data-modal="cloud-support-modal">
+            Read More
+          </button>
+        </div>
+        <div id="cloud-support-modal" class="modal">
+          <div class="modal-content">
+            <h3>Cloud Computing</h3>
+            <p><strong>Cloud Deployment (AWS, Azure)</strong></p>
+            <p><strong>Dockerization for Scalability</strong></p>
+            <p><strong>CI/CD Pipeline Setup</strong></p>
+            <p><strong>Monitoring and Logging for Performanc</strong></p>
+            <button class="close-modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cloud-computing end  -->
+
+    <!-- portfolio section design -->
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Project</span></h2>
+
+      <div class="portfolio-container">
+        <!-- Portfolio Box 1 -->
+        <div class="portfolio-box">
+          <img src="images/contactManager.jpg" alt="contact Manager" />
+          <div class="portfolio-layer">
+            <h3>Smart Contact Manager</h3>
+            <p>
+              This app helps organize and manage contacts efficiently, offering
+              features like storage, search, and secure data management for easy
+              access and organization.
+            </p>
+            
+          </div>
+        </div>
+
+        <!-- Portfolio Box 2 -->
+        <div class="portfolio-box">
+          <img src="images/foodorder.jpg" alt="Portfolio Project 2" />
+          <div class="portfolio-layer">
+            <h3>Basic Food Ordering Web</h3>
+            <p>
+              A simple food ordering app built with Spring Boot, offering
+              features like product selection, user authentication, and order
+              management for a seamless online food ordering experience.
+            </p>
+            
+          </div>
+        </div>
+
+        <!-- Portfolio Box 3 -->
+        <div class="portfolio-box">
+          <img src="images/weather.jpeg" alt="Portfolio Project 3" />
+          <div class="portfolio-layer">
+            <h3>Basic Weather App</h3>
+            <p>
+              A basic weather app built with Spring Boot that allows users to
+              check real-time weather updates by fetching data from an external
+              weather API, providing a simple and interactive interface.
+            </p>
+            
+          </div>
+        </div>
+
+        <!-- Portfolio Box 4 -->
+        <div class="portfolio-box">
+          <img src="images/qrGenerator.png" alt="Portfolio Project 4" />
+          <div class="portfolio-layer">
+            <h3>QR Generator</h3>
+            <p>
+              A QR code generator app built with Spring Boot, allowing users to
+              input their details and generate a personalized QR code for easy
+              sharing and access.
+            </p>
+            
+          </div>
+        </div>
+
+        <!-- Portfolio Box 5 -->
+        <div class="portfolio-box">
+          <img src="images/portfolio5.jpg" alt="Portfolio Project 5" />
+          <div class="portfolio-layer">
+            <h3>Reactive-Programming-with-Spring-Boot</h3>
+            <p>
+              A basic reactive API built with Spring Boot for non-blocking,
+              asynchronous data handling.
+            </p>
+            
+          </div>
+        </div>
+
+        <!-- Portfolio Box 6 -->
+        <div class="portfolio-box">
+          <img src="images/portfolio.jpeg" alt="Portfolio Project 6" />
+          <div class="portfolio-layer">
+            <h3>Portfolio Web</h3>
+            <p>
+              A portfolio website built with Express.js, highlighting projects,
+              skills, and achievements in a clean and responsive design.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h1 class="heading">Contact <span>Me!</span></h1>
+      <div class="itemContact">
+        <h1 class="display-4 text-center">Say Hello</h1>
+        <p class="text-secondary-emphasis mt-3 text-center">
+          Thank you for visiting my portfolio website. I'd love to discuss how I
+          can contribute to your next project. Feel free to reach out via the
+          provided contact details.
+        </p>
+        <a
+          
+        >
+          Let's Connect? Book an Appointment
+        </a>
+      </div>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>&copy; 2025 <span>My Website</span>. All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home" aria-label="Back to top"
+          ><i class="bx bx-up-arrow-alt"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
